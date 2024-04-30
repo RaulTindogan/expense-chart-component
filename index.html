@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Libre+Franklin:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+  <title>Frontend Mentor | Expenses chart component</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+</head>
+<body class="flex justify-center items-center min-h-[100vh] px-2 bg-Cream font-Franklin">
+  <div class="max-w-[400px] w-full">
+    <div class="flex justify-between p-5 bg-Soft-red rounded-md mb-5 md:px-10">
+      <div class="text-white">
+        <p class="text-sm">My balance</p>
+        <h1 class="font-[600] text-2xl">$921.48</h1>
+      </div>
+      <div>
+        <img src="images/logo.svg" alt="" class="Logo">
+      </div>
+    </div>
+    <div class="py-5 bg-white rounded-md px-5 md:px-10">
+      <div>
+        <h2 class="text-xl font-bold">Spending - Last 7 days</h2>
+        <div class="h-[250px]">
+          <canvas id="myChart" class="w-full"></canvas>
+        </div>
+      </div> 
+      <div>
+        <div class="border-t-2 border-Cream pt-3">
+          <p class="text-Medium-brown text-sm">Total this month</p>
+          <div class="flex justify-between items-center">
+            <h2 class="text-2xl font-[600]">$478.33</h2>
+            <div>
+              <h3 class="text-Dark-brown font-[600]">+2.4%</h3>
+              <p class="text-sm text-Medium-brown">from last month</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+  <script src="tailwindconfig.js"></script>
+  <script src="chart.js"></script>
+</body>
+</html>
